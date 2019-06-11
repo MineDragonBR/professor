@@ -15,7 +15,7 @@ public class CorRepositoryJDBC implements CorRepository {
 		
 		this.conexão = conexão;
 		
-		conexão.createStatement().executeUpdate("drop table cor");
+		//	conexão.createStatement().executeUpdate("drop table cor");
 		String sql = "create table if not exists cor ("
 				+ "id integer not null primary key,"
 				+ "nome varchar(255) not null unique"
